@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="강민혜">
+	<meta name="description" content="행동 인터넷의 가치와 이점에 대한 자세한 사항">
+	<meta name="keywords" content="가치, 이점">
+	<meta charset="utf-8">
+	<title>가치와 이점</title>
+	<link rel="stylesheet" type="text/css" href="행동인터넷.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<script type="text/javascript" src="행동인터넷.js"></script>
+	<style>
+		body {
+			font-size: 22px;
+		}
+		table {
+			margin: 85px;
+			padding: 30px;
+			background: aliceblue;
+			
+			border-spacing: 0 30px;
+		}
+		caption {
+			font-size: 24px;
+		}
+		td {
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<span id="plus" class="material-symbols-outlined" onmousedown="svis()" title="누르면 검색 창이 나타납니다.">add</span>
+		<form id="search" name="sform" action="https://search.naver.com/search.naver" method="get" target="_blank">
+			<input name="query" type="search" placeholder="검색어를 입력하세요.">
+			<button type="submit">검색</button>
+		</form>
+		<h3 id="title" onmouseover="mine()"><a href="행동인터넷.html">IoB <span>행동 인터넷</span></a></h3>
+		<canvas id="myCanvas" width="200" height="100"></canvas>
+		<script>
+			let canvas = document.getElementById("myCanvas");
+			let context = canvas.getContext("2d");
+			context.strokeStyle = "black";
+			context.font = "italic 20px forte";
+			context.textAlign = "center";
+			context.strokeText("201901756 강민혜",90,50);
+		</script>
+		<nav id="menubar">
+			<ul>
+				<li><a href="행동인터넷이란.html">행동 인터넷(IoB)이란?</a></li>
+				<li><a style="color: #2575fc;" href="가치와이점.html">가치와 이점</a></li>
+				<li><a href="적용사례.html">적용 사례</a></li>
+				<li><a href="위험성.html">위험성</a></li>
+			</ul>
+			<hr>
+		</nav>
+	</header>
+	<br><br><br>
+	<section>
+		<table>
+			<tbody>
+				<tr>
+					<td>1.</td>
+					<td>모든 플랫폼에서 고객 구매 습관을 분석하여 사용자가 장치 및 제품과 상호 작용하는 방식에 대해 이전에는 얻을 수 없었던 데이터를 얻을 수 있다.</td>
+				</tr>
+				<tr>
+					<td>2.</td>
+					<td>고객이 구매 과정에서 어디에 있는지에 대한 자세한 정보를 얻는다.</td>
+				</tr>
+				<tr>
+					<td>3.</td>
+					<td>실시간 POS 알림 및 티켓팅을 제공한다.</td>
+				</tr>
+				<tr>
+					<td>4.</td>
+					<td>문제를 신솟하게 해결하여 판매를 마감하고 고객 만족도를 유지할 수 있다.</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<footer>
+		<p><small>
+			참고<br>
+			<a href="https://blog.naver.com/smartnari/222602968755" target="_blank">ID/PW를 간편하고 안전하게 간편겨제매니저 블로그, IT전문지식.동향 '나의 쇼핑 습관도 파악하는! 행동인터넷 시대'</a><br>
+		</small>	
+		</p>
+	</footer>
+</body>
+</html>

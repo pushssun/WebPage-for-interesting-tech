@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="강민혜">
+	<meta name="description" content="행동 인터넷의 위험성에 대한 자세한 사항">
+	<meta name="keywords" content="위험성, 개인정보, 보안, 해킹">
+	<meta charset="utf-8">
+	<title>위험성</title>
+	<link rel="stylesheet" type="text/css" href="행동인터넷.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<script type="text/javascript" src="행동인터넷.js"></script>
+	<style>
+		body {
+			margin-bottom: 70px;
+		}
+		div {
+			width: 500px;
+			height: 100px;
+			text-align: center;
+			padding-top: 70px;
+			position: absolute;
+		}
+		#p1,#p2,#p3 {
+			background-color: #FFE1ED;
+			border-radius: 120px;
+		}
+		#p1 {
+			left: 90px;
+			top: 400px;
+		}
+		#p2 {
+			left: 530px;
+			top: 200px;
+		}
+		#p3 {
+			left: 950px;
+			top: 400px;
+		}
+		#s1,#s2 {
+			width: 600px;
+			height: 200px;
+			background-color: #B4EFEB;
+			margin-bottom : 70px;
+		}
+		#s1 {
+			left: 150px;
+			top: 750px;
+		}
+		#s2 {
+			left: 800px;
+			top: 750px;
+		}
+		.arrow1,.arrow2,.arrow3 {
+			width: 0;
+			height: 0;
+			border-left: 20px solid white;
+			border-right: 20px solid white;
+			border-bottom: 20px solid black;
+		}
+		.line1,.line2,.line3 {
+			width: 0;
+			background-color: black;
+			border: 2px solid black;
+			z-index: -1;
+		}
+		.arrow1 {
+			left: 602px;
+			top: 650px;
+		}
+		.line1 {
+			height: 100px;
+			left: 550px;
+			top: 540px;
+		}
+		.arrow2 {
+			left: 756px;
+			top: 646px;
+		}
+		.line2 {
+			height: 280px;
+			left: 775px;
+			top: 300px;
+		}
+		.arrow3 {
+			left:862px;
+			top: 650px;
+		}
+		.line3 {
+			height: 100px;
+			left: 950px;
+			top: 540px;
+		}
+		ul {
+			text-align: left;
+			padding-top: 20px;
+			padding-left: 70px;
+		}
+		footer {
+			position: absolute;
+			right: 0;
+			top: 1000px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<span id="plus" class="material-symbols-outlined" onmousedown="svis()" title="누르면 검색 창이 나타납니다.">add</span>
+		<form id="search" name="sform" action="https://search.naver.com/search.naver" method="get" target="_blank">
+			<input name="query" type="search" placeholder="검색어를 입력하세요.">
+			<button type="submit">검색</button>
+		</form>
+		<h3 id="title" onmouseover="mine()"><a href="행동인터넷.html">IoB <span>행동 인터넷</span></a></h3>
+		<canvas id="myCanvas" width="200" height="100"></canvas>
+		<script>
+			let canvas = document.getElementById("myCanvas");
+			let context = canvas.getContext("2d");
+			context.strokeStyle = "black";
+			context.font = "italic 20px forte";
+			context.textAlign = "center";
+			context.strokeText("201901756 강민혜",90,50);
+		</script>
+		<nav id="menubar">
+			<ul>
+				<li><a href="행동인터넷이란.html">행동 인터넷(IoB)이란?</a></li>
+				<li><a href="가치와이점.html">가치와 이점</a></li>
+				<li><a href="적용사례.html">적용 사례</a></li>
+				<li><a style="color: #2575fc;" href="위험성.html">위험성</a></li>
+			</ul>
+			<hr>
+		</nav>
+	</header>
+	<br><br><br>
+	<section>
+		<div id="p1">개인정보 유출 급증의 위험성</div>
+		<div id="p2">보안과 해킹에 취약</div>
+		<div id="p3">감시와 검열이 쉬움</div>
+		<div class="line1" style="transform: rotate(-45deg);"></div>
+		<div class="arrow1" style="transform: rotate(133deg);"></div>
+		<div class="line2"></div>
+		<div class="arrow2" style="transform: rotate(180deg);"></div>
+		<div class="line3" style="transform: rotate(45deg);"></div>
+		<div class="arrow3" style="transform: rotate(-133deg);"></div>
+		<div id="s1">기업적 조치
+			<ul>
+				<li>개인 정보의 비식별 처리</li>
+				<li>원본의 암호화</li>
+				<li>시스템 접근과 권한 통제</li>
+			</ul></div>
+		<div id="s2">개인적 조치
+			<ul>
+				<li>불필요한 개인정보 제공 동의는 하지 않음</li>
+				<li>안전한 비밀번호 사용</li>
+			</ul></div>
+
+	</section>
+	<footer>
+		<p><small>
+			참고<br>
+			<a href="https://blog.naver.com/smartnari/222602968755" target="_blank">ID/PW를 간편하고 안전하게 간편겨제매니저 블로그, IT전문지식.동향 '나의 쇼핑 습관도 파악하는! 행동인터넷 시대'</a><br>
+		</small>	
+		</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="강민혜">
+	<meta name="description" content="행동 인터넷의 적용 사례에 대한 자세한 사항">
+	<meta name="keywords" content="위치 추적, 마케팅, 금융, 환자">
+	<meta charset="utf-8">
+	<title>적용 사례</title>
+	<link rel="stylesheet" type="text/css" href="행동인터넷.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<script type="text/javascript" src="행동인터넷.js"></script>
+	<style>
+		body {
+			font-size: 22px;
+		}
+		section {
+			padding: 50px;
+			margin-top: 50px;
+		}
+		details {
+			padding: 20px;
+		}
+		details summary {
+			font-size: 24px;
+		}
+		figure {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<span id="plus" class="material-symbols-outlined" onmousedown="svis()" title="누르면 검색 창이 나타납니다.">add</span>
+		<form id="search" name="sform" action="https://search.naver.com/search.naver" method="get" target="_blank">
+			<input name="query" type="search" placeholder="검색어를 입력하세요.">
+			<button type="submit">검색</button>
+		</form>
+		<h3 id="title" onmouseover="mine()"><a href="행동인터넷.html">IoB <span>행동 인터넷</span></a></h3>
+		<canvas id="myCanvas" width="200" height="100"></canvas>
+		<script>
+			let canvas = document.getElementById("myCanvas");
+			let context = canvas.getContext("2d");
+			context.strokeStyle = "black";
+			context.font = "italic 20px forte";
+			context.textAlign = "center";
+			context.strokeText("201901756 강민혜",90,50);
+		</script>
+		<nav id="menubar">
+			<ul>
+				<li><a href="행동인터넷이란.html">행동 인터넷(IoB)이란?</a></li>
+				<li><a href="가치와이점.html">가치와 이점</a></li>
+				<li><a style="color: #2575fc;" href="적용사례.html">적용 사례</a></li>
+				<li><a href="위험성.html">위험성</a></li>
+			</ul>
+			<hr>
+		</nav>
+	</header>
+	<br><br><br>
+	<section>
+		<details>
+			<summary><strong>위치 추적 및 소비자 행동</strong></summary>
+			<p>&nbsp;&nbsp;&nbsp;스마트폰의 GPS, NFC(근거리 통신) 및 블루투스와 같은 기술을 사용하여 사용자의 위치를 추적하고 그에 따라 알림이나 이메일을 보내며 기업이 고객의 경험을 파악하고, 고객에게 제공하기 위한 더 나은 전략을 개발하기 위해 적용한다.</p>
+		</details>
+		<details>
+			<summary><strong>마케팅</strong></summary>
+			<p>&nbsp;&nbsp;&nbsp;기업이 잠재 고객과 연결하고, 클릭률을 통해 광고에 대한 행동을 추적하는 데 이용한다.<br>
+			<figure>
+				<img src="https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc" width="150" height="150">&nbsp;&nbsp;
+				<img src="data:image/png;base64,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" width="300" height="150">
+			</figure>
+			ex)<br>YouTube : 시청자의 경험을 개선하기 위해 행동 분석을 활용하고 있으며, 행동 데이터를 추적하여 사용자의 비디오를 추천하고 더 관심이 있는 것을 보여준다.
+			<br>Breinify : 소비자의 데이터를 모아 실시간 구매 과정을 파악한다. 이러한 데이터를 바탕으로 개인별로 최적화된 광고를 제공하는 등 소비자의 선호도를 파악하여 마케팅으로 사용하고 있다.
+		</p>
+		</details>
+		<details>
+			<summary><strong>보험 & 금융</strong></summary><br>
+			<figure>
+				<img src="https://blog.kakaocdn.net/dn/Ulo1a/btrbgocJRGq/N3X2TrFi5FNnYXHpqLeUeK/img.png" width="550" height="250">
+				<figcaption><small>흥국화재와 KT의 운전습관연계보험(UBI) 서비스 개념도 (출처 : 한국경제)</small></figcaption>
+			</figure>
+			<p>&nbsp;&nbsp;&nbsp;인슈어테크(IT기술에 보험산업을 적용한 개념)의 대표적인 서비스 운전 습관 연계 보험(Usage Based Insurance) 운전 습관 연계 보험이 적용된 자동차보험은 차량 속도, 운전 거리, 운전 시간 등을 측정하고 운전 습관을 분석한다. 이것을 통해 안전 운전 여부를 판단하고, 이를 보험료 산정에 반영한다.<br>
+			ex) 흥국 화재</p>
+			<p>&nbsp;&nbsp;&nbsp;위치기반서비스(Location Based Service ,LBS) 금융상품은 통신사 기지국을 통해 고객의 이동 동선을 실시간 행동 데이터로 받아 금리 인하 등의 혜택을 맞춤형으로 제공한다.<br>
+			ex) 농협 은행</p>
+			<figure>
+				<img src="https://postfiles.pstatic.net/MjAyMTEyMjNfMTk0/MDAxNjQwMjUxMjE2MDY0.PTn3-GfKk6KaftIjsFdy7LOgXHnLdqwsAYmcOzVQHGMg.YH3ADmzvm0UD4gTuppBgufldOc2YzevxwSWsm0ozJuQg.JPEG.smartnari/6-1.jpg?type=w966" width="550" height="350">
+				<figcaption><small>빅데이터를 활용한 고객 행동 기반 개인화 마케팅 (출처 : 우리 은행)</small></figcaption>
+			</figure>
+			<p>&nbsp;&nbsp;&nbsp;빅데이터를 활용한 고객 행동 기반 개인화 마케팅은  기존에 활용했던 정형 데이터(고객 인적정보, 거래정보)와 상담내용, 입출금명세, 인터넷·스마트뱅킹 이용내역과 같은 비정형 고객행동 정보를 AI로 분석해 개인별 최적화된 맞춤형 상품을 추천한다.<br>
+			ex) 우리 은행</p>
+		</details>
+		<details>
+			<summary><strong>환자 회복을 위한 건강 모니터링</strong></summary>
+			<figure>
+				<img src="https://cdn.maily.so/m2oxadmakvn9f21ansnycz7cm134" width="500" height="300">
+				<figcaption><small>맞춤형 케어플랜(출처 : Healum)</small></figcaption>
+			</figure>
+			<p>&nbsp;&nbsp;&nbsp;장기 질환을 앓고 있는 사람들에게 맞춤형 의료 서비스와 콘텐츠 제공할 수 있도록 개인의 식단, 혈당 수치, 심박수 및 수면 패턴을 추적할 수 있는 스마트폰 건강 앱을 개발하고 있다. 행동 인터넷을 기반으로 개발된 앱은 환자에게 현재 건강 상태에 대해 경고하고, 휴식을 취하도록 제안하며, 그에 따라 식습관이나 약물 복용을 수정할 수 있도록 도와준다. 이 필수 정보는 의사가 질병을 진단하고, 적절한 치료를 더 빨리 시작하는 데 도움이 되고 있다.<br>
+			ex) 힐럼</p>
+		</details>
+	</section>
+	<footer>
+		<p><small>
+			참고<br>
+			<a href="https://blog.naver.com/smartnari/222602968755" target="_blank">ID/PW를 간편하고 안전하게 간편겨제매니저 블로그, IT전문지식.동향 '나의 쇼핑 습관도 파악하는! 행동인터넷 시대'</a><br>
+		</small>	
+		</p>
+	</footer>
+</body>
+</html>

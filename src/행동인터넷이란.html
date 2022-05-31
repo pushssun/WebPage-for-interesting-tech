@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="강민혜">
+	<meta name="description" content="행동 인터넷에 대한 자세한 사항">
+	<meta name="keywords" content="정의, 사물 인터넷과의 차이">
+	<meta charset="utf-8">
+	<title>행동인터넷이란?</title>
+	<link rel="stylesheet" type="text/css" href="행동인터넷.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<script type="text/javascript" src="행동인터넷.js"></script>
+	<style>
+		.material-symbols-outlined {
+			padding: 20px;
+			padding-bottom: 0;
+		 	font-size : 100px;
+		}
+		#plus {
+			padding: 0;
+		}
+		body {
+			font-size: 22px;
+		}
+		p {
+			padding: 20px 50px 0px 50px;
+		}
+		p strong {
+			font-size: 30px;
+		}
+		figure {
+			padding-top: 65px;
+		}
+		img {
+			margin: 0;
+			padding-left: 310px;
+			width: 800px;
+		}
+		figcaption {
+			text-align: right;
+			padding-right: 330px;
+		}
+		div#iob {
+			margin: 40px;
+			padding: 30px;
+			padding-bottom: 40px;
+			border:  5px solid;
+			border-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+			border-image-slice: 1;
+		}
+		#iob div span{
+			padding-left: 5px;
+			padding-right: 144px;
+		}
+		.balloon {
+			position:absolute;
+			margin: 50px 0 0 50px;
+			padding: 50px;
+			width:900px;
+			height:90px;
+			border: 3px solid #333333;
+			border-radius: 10px;
+			visibility: hidden;
+		}
+		.balloon:after {
+			border-top:0px solid transparent;
+			border-left: 15px solid transparent;
+			border-right: 0px solid transparent;
+			border-bottom: 15px solid #333333;
+			content:"";
+			position:absolute;
+			top:10px;
+			left:-15px;
+		}
+		div#dikw {
+			margin: 40px;
+			margin-top: 0;
+			padding: 30px;
+		}
+		div#dikw div {
+			display: inline-block;
+		}
+	</style>
+	<script>
+		function vis(){
+			var balloon = document.getElementById('balloon');
+			if (balloon.style.visibility == "visible")
+				balloon.style.visibility = "hidden";
+			else
+				balloon.style.visibility = "visible";
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<span id="plus" class="material-symbols-outlined" onmousedown="svis()" title="누르면 검색 창이 나타납니다.">add</span>
+		<form id="search" name="sform" action="https://search.naver.com/search.naver" method="get" target="_blank">
+			<input name="query" type="search" placeholder="검색어를 입력하세요.">
+			<button type="submit">검색</button>
+		</form>
+		<h3 id="title" onmouseover="mine()"><a href="행동인터넷.html">IoB <span>행동 인터넷</span></a></h3>
+		<canvas id="myCanvas" width="200" height="100"></canvas>
+		<script>
+			let canvas = document.getElementById("myCanvas");
+			let context = canvas.getContext("2d");
+			context.strokeStyle = "black";
+			context.font = "italic 20px forte";
+			context.textAlign = "center";
+			context.strokeText("201901756 강민혜",90,50);
+		</script>
+		<nav id="menubar">
+			<ul>
+				<li><a style="color: #2575fc;" href="행동인터넷이란.html">행동 인터넷(IoB)이란?</a></li>
+				<li><a href="가치와이점.html">가치와 이점</a></li>
+				<li><a href="적용사례.html">적용 사례</a></li>
+				<li><a href="위험성.html">위험성</a></li>
+			</ul>
+			<hr>
+		</nav>
+	</header>
+	<br><br><br>
+	<section>
+		<figure>
+			<img src="https://post-phinf.pstatic.net/MjAyMTA2MjVfMTI2/MDAxNjI0NjAxNTMwMzM0.tJ6MVVbJVrAuoKdj-1HBFeo5u8Rd1FSCwq0CLmVpom8g.lOZIhbXgB_odql_LY9ryNdeNrP1Da7tq6iLLpVWdk2Mg.JPEG/image_2953335091624601469750.jpg?type=w1200">
+			<figcaption>출처 : 게티이미지 코리아</figcaption>
+		</figure><br>
+		<p>
+		 	<strong>행동 인터넷(IoB; Internet of Behaviors)</strong>이란?<br><br> 
+		 	&nbsp;&nbsp;사람의 습관 또는 행동 데이터를 모아 분석, 예측해 특정 행동을 유도하는 인터넷을 말한다. 
+		 	사물인터넷(IoT; Internet of Thing)에서 유래한 신조어로, 사물인터넷이 센서나 통신 기능을 통해 데이터를 수집, 분석하고 정보를 전달했다면, 행동 인터넷은 센서가 아닌 사람의 행동 패턴을 분석해 디지털화한다.<br><br>
+		 	<div id="iob">
+		 		<span style="font-size: 75px;">IoB &nbsp;= </span><br>
+		 		<span class="material-symbols-outlined">home_iot_device</span>
+		 		<span class="material-symbols-outlined">add</span>
+		 		<span class="material-symbols-outlined">docs</span>
+		 		<span class="material-symbols-outlined">add</span>
+		 		<span class="material-symbols-outlined">psychology</span>
+		 		<span class="material-symbols-outlined">add</span>
+		 		<span class="material-symbols-outlined">change_circle</span>
+		 		<span class="material-symbols-outlined">add</span>
+				<span class="material-symbols-outlined">library_books</span><br>
+				<div>
+		 			<span>사물인터넷(IoT)</span><span>Data 수집</span><span>AI 행동 패턴 분석</span><span>행동 변화 제시</span><span style="padding-right: 0;">사람 행동 변화 유도</span></div>
+		 	</div>
+		</p>
+	</section>
+	<section>
+		<p>
+			<div id="dikw">
+				<div style="display: block;"><img src="img/DIKW.png"></div>
+				<div><span class="material-symbols-outlined" style="margin-top: 20px;" onclick="vis()">face</span><br><span>Chrissy Kidd<br>(글로벌 기업관리 솔루션 업체 <br>BMC의 기술 에디터)</span></div>
+				<div id="balloon" class="balloon">"IoB는 IoT의 확장된 개념으로, IoT가 데이터와 정보의 영역이라면,<br> IoB는 더 나아가 이 정보를 지식으로 활용하고 지혜를 동반한 행동을 유발하는 것"</div>
+				
+			</div>
+		</p>
+	</section>
+	<section>
+		<p style="padding-top: 100px;">
+			<strong>사물 인터넷과의 차이</strong><br><br>
+		 	&nbsp;&nbsp;사물 인터넷이 사물을 인터넷 네트워크로 끌어들여 작동하게 하거나 원격 제어와 조정을 하는 것이라면, 행동 인터넷은 인간의 행동이 그 대상이 되어 사람들의 행동으로 연결된 인터넷을 의미한다. 행동 인터넷은 사람들의 행동 데이터를 수집·분석하여 예측하는 인터넷으로 볼 수 있으며 데이터를 활용해 행동의 변화를 가져오는 것을 목적으로 한다.
+	 	</p>
+	</section>
+	<br><br>
+	<footer>
+		<p><small>
+			참고<br>
+			<a href="https://terms.naver.com/entry.naver?docId=6459249&cid=43667&categoryId=43667" target="_blank">Naver 지식백과, '행동인터넷'</a><br>
+			<a href="https://blog.naver.com/netandhi/222263176601" target="_blank">넷엔드 공식 블로그, [IT이슈] 행동인터넷 IoB(Internet Of Behavior)https://blog.naver.com/netandhi/222263176601</a>
+		</small>	
+		</p>
+	</footer>
+</body>
+</html>
